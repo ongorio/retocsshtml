@@ -7,7 +7,7 @@
     <meta name="author" content="Isaias Alvarez Vargas">
     <meta name="description" content="Reto de HTML/CSS para clase de Desarrollo e implementacion de sistemas de software">
     <meta name="keywords" content="">
-    <title>Document</title>
+    <title>Illenium</title>
 
     <!-- Style Sheet -->
     <link rel="stylesheet" href="./main.css">
@@ -24,8 +24,8 @@
 
     <header>
         <!-- Main Navbar -->
-        <nav class="mi-nav mi-flex">
-            <ul class="mi-navbar">
+        <nav class="mi-barra mi-flex">
+            <ul class="mi-barranavegacion">
                 <li class="mi-link-item">
                     <a href="./index.html">
                         Home
@@ -36,7 +36,7 @@
                         Tours
                     </a>
                 </li>
-                <li class="mi-link-item mi-link-active">
+                <li class="mi-link-item mi-link-activo">
                     <a href="./discografia.html">
                         Discografia
                     </a>
@@ -44,24 +44,97 @@
             </ul>
 
             <!-- Social Networks -->
-            <ul class="mi-margen-izquierdo-auto mi-navbar">
-                <li class="mi-icon-link-item"><i class="fa-brands fa-instagram"></i></li>
-                <li class="mi-icon-link-item"><i class="fa-brands fa-youtube"></i></li>
-                <li class="mi-icon-link-item"><i class="fa-brands fa-twitter"></i></li>
-                <li class="mi-icon-link-item"><i class="fa-brands fa-facebook"></i></li>
-                <li class="mi-icon-link-item"><i class="fa-brands fa-tiktok"></i></li>
+            <ul class="mi-margen-izquierdo-auto mi-barranavegacion">
+                <li class="mi-icono-link-item">
+                    <a href="https://www.instagram.com/illenium/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="mi-icono-link-item">
+                    <a href="https://www.youtube.com/channel/UCv0tIDoaBZCTXQvVO4zosng"  target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="mi-icono-link-item">
+                    <a href="https://twitter.com/ILLENIUM"  target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="mi-icono-link-item">
+                    <a href="https://www.facebook.com/ILLENIUM/"  target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="mi-icono-link-item">
+                    <a href="https://www.tiktok.com/@illenium"  target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
 
     <main>
+
+
+        <div class="albums">
+            <div class="mi-flex album-principal" style="justify-content: center;">
+                <img src="./assets/fallenembersalbum.jpg" alt="fallenembers">
+                <a href="https://open.spotify.com/album/0KgcBsDY5uFt4EaG3roI3x?si=qOTSGhdcQXqo9pLCfNLhWA" class="boton-escuchar-grande" target="_blank">
+                    Listen Now <i class="fa-brands fa-spotify"></i>
+                </a>
+            </div>
+            <div class="mi-flex" style="justify-content: center; margin-bottom: 1rem;">
+                <h1>Fallen Embers</h1>
+            </div>
+            
+
+            <div class="mi-flex" style="justify-content: center;">
+                <div class="carta-album">
+                    <img src="./assets/ascendalbum.jpg" alt="ascendalbum">
+                    <div>
+                        <div class="mi-flex" style="align-items: center;">
+                            <p><strong>Ascend</strong></p>
+                            <small class="mi-margen-izquierdo-auto">2019</small>
+                        </div>
+                            <a href="https://open.spotify.com/album/60xcVwuQJAOyu11xf9mObS?si=fI27RoTiRqyAVSAn1MPONQ" class="boton-escuchar" target="_blank">
+                                Listen <i class="fa-brands fa-spotify"></i>
+                            </a>
+                    </div>
+                </div>
+
+                <div class="carta-album">
+                    <img src="./assets/awakealbum.jpg" alt="awakealbum">
+                    <div>
+                        <div class="mi-flex" style="align-items: center;">
+                            <p><strong>Awake</strong></p>
+                            <small class="mi-margen-izquierdo-auto">2017</small>
+                        </div>
+                            <a href="https://open.spotify.com/album/5rvIgXvAPGWspXY4rDLkeU?si=kgkz9YjGQkyMcYAkfQZbJA" class="boton-escuchar" target="_blank">
+                                Listen <i class="fa-brands fa-spotify"></i>
+                            </a>
+                    </div>
+                </div>
+                <div class="carta-album">
+                    <img src="./assets/ashesalbum.jpg" alt="ashesalbum">
+                    <div>
+                        <div class="mi-flex" style="align-items: center;">
+                            <p><strong>Ashes</strong></p>
+                            <small class="mi-margen-izquierdo-auto">2016</small>
+                        </div>
+                            <a href="https://open.spotify.com/album/1hG9qANsJg5lYm36MYun97?si=8Li99kxkQuimLTkFDkGbXA" class="boton-escuchar" target="_blank">
+                                Listen <i class="fa-brands fa-spotify"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
         
 
     <footer>
-        <div class="mi-container mi-flex">
-
+        <div class="mi-contenedor mi-flex">
             <div>
                 <img src="./assets/illeniumlogo.png" alt="logo" class="logo">
                 <h6 style="color: #ffffff; text-align: center;">© 2023 Illenium</h6>
@@ -71,7 +144,6 @@
                 <li>Politicas de Privacidad</li>
                 <li>Terminos de Uso</li>
                 <li>Politicas de Cookies</li>
-                <li></li>
             </ul>
         </div>
         

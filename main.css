@@ -7,13 +7,25 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar Clases */
-.mi-nav{
-    margin-left: 15%;
-    margin-right: 15%;
+a{
+    text-decoration: none;
+    inherits:false;
+    color: inherit;
 }
 
-.mi-navbar {
+/* Navbar Clases */
+
+header{
+    box-shadow: 0rem 0.2rem 2rem #140d09;
+    margin-bottom: 2rem;
+}
+.mi-barra{
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+.mi-barranavegacion {
     display: flex;
     list-style: none;
     padding: 0;
@@ -53,11 +65,11 @@ body{
     transition: 0.3s;
 }
 
-.mi-link-item.mi-link-active a{
+.mi-link-item.mi-link-activo a{
     font-weight: 500;
 }
 
-.mi-link-item.mi-link-active a::after{
+.mi-link-item.mi-link-activo a::after{
     content: "";
     position: absolute;
     background-color: #140d09;
@@ -68,11 +80,11 @@ body{
 }
 
 
-.mi-icon-link-item{
+.mi-icono-link-item{
     margin-left: 1rem;
 }
 
-.mi-icon-link-item:hover{
+.mi-icono-link-item:hover{
     color: #783e2a;
 }
 
@@ -97,7 +109,7 @@ body{
     margin-right: auto;
 }
 
-.mi-container{
+.mi-contenedor{
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -110,9 +122,6 @@ footer{
     background-color: #140d09;
 }
 
-.footer{
-    display: flex;
-}
 
 footer ul{
     list-style: none;
@@ -122,7 +131,7 @@ footer ul{
 
 footer ul li{
     padding: 0.5rem;
-    text-align: center;
+    text-align: right;
 }
 
 .logo{
@@ -132,11 +141,11 @@ footer ul li{
 
 /* Index Clases */
 
-.highlight-card{
+.carta-resaltada{
     position:relative;
 }
 
-div.text{
+div.texto{
     padding: 1rem;
     width: 30%;
     background-color: transparent;
@@ -148,25 +157,25 @@ div.text{
     transform: translate(-50%, -50%);
 }
 
-h1.center{
+h1.centro{
     font-weight: 100;
     color: #ffffff;
 }
 
 
-.main-image{
+.imagen-principal{
     height: 600px;
     width: 100%;
 }
 
 
-.highlight-news{
+.noticias-resaltadas{
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.news-card{
+.carta-noticia{
     flex: 1;
     width: 200px;
     border-bottom: 2px solid #783e2a;
@@ -174,8 +183,154 @@ h1.center{
     margin: 1rem;
     display: flex;
 }
-.card-body{
+
+.carta-cuerpo{
     padding: 1rem;
-    /* margin-top: auto; */
-    /* margin-bottom: 0; */
+}
+
+
+/* Tours Clases */
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.encabezado{
+    border-bottom: 2px solid #140d09 ;
+}
+
+.encabezado th{
+    text-align: center;
+    
+}
+
+.tabla-fila{
+    border-bottom: 3px solid #140d09;
+}
+
+.tabla-fila td{
+    padding: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tabla-fila:hover{
+    background-color: #e0e0de;
+}
+
+.boton-accion{
+    padding: 1rem;
+    border: none;
+    background-color: #783e2a;
+    border: 2px solid #783e2a;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+}
+.boton-accion:hover{
+    padding: 1rem;
+    border: none;
+    background-color: #e0e0de;
+    border: 2px solid #783e2a;
+    font-weight: 500;
+    font-size: 20px;
+    color: #783e2a;
+}
+
+.boton-accion:active{
+    padding: 1rem;
+    border: none;
+    background-color: #783e2a;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.contenedor-estelar{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+/* Discografia */
+
+.album-principal{
+    /* margin-bottom: 2rem; */
+    position: relative;
+}
+.album-principal img{
+    height: 500px;
+    width: 500px;
+}
+
+.album-principal a{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.albums{
+    margin-bottom: 4rem;
+}
+
+.boton-escuchar-grande{
+    text-decoration: none;
+    background-color: green;    
+    text-align: center;
+    color: #140d09;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 30px 30px;
+}
+
+.boton-escuchar-grande:hover{
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+}
+
+.boton-escuchar-grande:active{
+    color: #140d09;
+    background-color: green;
+}
+
+.carta-album{
+    margin-right: 2rem;
+}
+
+.carta-album img{
+    height: 200px;
+    width: 200px;
+}
+
+
+.boton-escuchar{
+    text-decoration: none;
+    background-color: green;    
+    text-align: center;
+    padding: 0.5rem;
+    color: #140d09;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.boton-escuchar:hover{
+    background-color: transparent;
+    color: green;
+    border: 2px solid green
+}
+
+.boton-escuchar:active{
+    background-color: green;
+    color: #140d09;
+
 }

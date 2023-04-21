@@ -7,7 +7,7 @@
     <meta name="author" content="Isaias Alvarez Vargas">
     <meta name="description" content="Reto de HTML/CSS para clase de Desarrollo e implementacion de sistemas de software">
     <meta name="keywords" content="">
-    <title>Document</title>
+    <title>Illenium</title>
 
     <!-- Style Sheet -->
     <link rel="stylesheet" href="./main.css">
@@ -24,14 +24,14 @@
 
     <header>
         <!-- Main Navbar -->
-        <nav class="mi-nav mi-flex">
-            <ul class="mi-navbar">
+        <nav class="mi-barra mi-flex">
+            <ul class="mi-barranavegacion">
                 <li class="mi-link-item">
                     <a href="./index.html">
                         Home
                     </a>
                 </li>
-                <li class="mi-link-item mi-link-active">
+                <li class="mi-link-item mi-link-activo">
                     <a href="./tours.html">
                         Tours
                     </a>
@@ -44,34 +44,94 @@
             </ul>
 
             <!-- Social Networks -->
-            <ul class="mi-margen-izquierdo-auto mi-navbar">
-                <li class="mi-icon-link-item"><i class="fa-brands fa-instagram"></i></li>
-                <li class="mi-icon-link-item"><i class="fa-brands fa-youtube"></i></li>
-                <li class="mi-icon-link-item"><i class="fa-brands fa-twitter"></i></li>
-                <li class="mi-icon-link-item"><i class="fa-brands fa-facebook"></i></li>
-                <li class="mi-icon-link-item"><i class="fa-brands fa-tiktok"></i></li>
+            <ul class="mi-margen-izquierdo-auto mi-barranavegacion">
+                <li class="mi-icono-link-item">
+                    <a href="https://www.instagram.com/illenium/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="mi-icono-link-item">
+                    <a href="https://www.youtube.com/channel/UCv0tIDoaBZCTXQvVO4zosng"  target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="mi-icono-link-item">
+                    <a href="https://twitter.com/ILLENIUM"  target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="mi-icono-link-item">
+                    <a href="https://www.facebook.com/ILLENIUM/"  target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="mi-icono-link-item">
+                    <a href="https://www.tiktok.com/@illenium"  target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
 
     <main>
-        <div class="mi-container">
-            <h1>Fallen Embers</h1>
-            <h4>2023</h4>
+        <div class="mi-contenedor">
+            <div class="contenedor-estelar">
+                <img src="./assets/fallenembers.jpg" alt="fallenembers">
+                <div class="mi-flex"> 
+                    <h1 class="mi-margen-centro" style="text-align: center;">Fallen Embers</h1>
+                </div>
+                <div class="mi-flex">
+                    <small class="mi-margen-centro" style="text-align: center; opacity: 0.6;">2023</small>
+                </div>
+            </div>
 
-            <table>
+            <table class="tabla">
                 <thead>
-                    <th>
-                        <td>Fecha:</td>
-                        <td>Ciudad:</td>
-                        <td>Evento:</td>
-                    </th>
+                    <tr class="encabezado">
+                        <th>Fecha</th>
+                        <th>Ciudad</th>
+                        <th>Evento</th>
+                        <!-- <th>d</th> -->
+                    </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="tabla-fila">
                         <td>April 22, 2023</td>
                         <td>Las Vegas, Nevada</td>
+                        <td>TAO Beach Dayclub</td>
+                        <td><button class="boton-accion">Comprar Boletos</button></td>
+                    </tr>
+                    <tr class="tabla-fila">
+                        <td>May 5, 2023</td>
+                        <td>West Concord, North Carolina</td>
+                        <td>Breakaway Music Festival Charlotte 2023</td>
+                        <td><button class="boton-accion">Comprar Boletos</button></td>
+                    </tr>
+                    <tr class="tabla-fila">
+                        <td>May 6, 2023</td>
+                        <td>Las Vegas, Nevada</td>
+                        <td>Omnia</td>
+                        <td><button class="boton-accion">Comprar Boletos</button></td>
+                    </tr>
+                    <tr class="tabla-fila">
+                        <td>May 7, 2023</td>
+                        <td>Las Vegas, Nevada</td>
+                        <td>Evening Tide</td>
+                        <td><button class="boton-accion">Comprar Boletos</button></td>
+                    </tr>
+                    <tr class="tabla-fila">
+                        <td>May 27, 2023</td>
+                        <td>Quincy, Washington</td>
+                        <td>The Gorge</td>
+                        <td><button class="boton-accion">Comprar Boletos</button></td>
+                    </tr>
+                    <tr class="tabla-fila">
+                        <td>Jun 2, 2023</td>
+                        <td>San Francisco, California</td>
+                        <td>Chase Center</td>
+                        <td><button class="boton-accion">Comprar Boletos</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -80,7 +140,7 @@
         
 
     <footer>
-        <div class="mi-container mi-flex">
+        <div class="mi-contenedor mi-flex">
 
             <div>
                 <img src="./assets/illeniumlogo.png" alt="logo" class="logo">
